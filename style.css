@@ -1,0 +1,149 @@
+html {
+    background-image: none !important;
+    background: linear-gradient(135deg, #f953c6, #b91d73) !important;
+    min-height: 100vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f953c6, #b91d73) !important;
+    background-image: none !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    width: 500px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #b91d73;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+input { 
+    flex: 1;
+    padding: 15px 20px;
+    border: 3px solid #f953c6;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    outline: none;
+    color: #333333;
+}
+
+input::placeholder {
+    color: #cccccc;
+    font-weight: 400;
+}
+
+#addBtn {
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #f953c6, #b91d73);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.2s;
+}
+
+#addBtn:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-left: 5px solid #f953c6;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #b91d73;
+}
+
+.delete-btn {
+    padding: 8px 15px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+}
+
+.delete-btn:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 90%;
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .input-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #addBtn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    li {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+
+    .delete-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
